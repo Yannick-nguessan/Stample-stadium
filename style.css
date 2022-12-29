@@ -1,0 +1,83 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  
+  font-family: Lato, Helvetica, sans-serif;
+ 
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.title{
+  font-size: clamp(1.5rem, 2.7rem, 3rem);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 40px;
+}
+
+img{
+  width: 100%;
+}
+.btn{
+  display: block;
+  margin: 0 5px 10px;
+  padding: 2px;
+ max-width: 100px;
+
+}
+.main-conteiner{
+  display: flex;
+  
+  }
+table {
+  border: 1.5px solid;
+  width: auto;
+ margin: 0 auto;
+ margin-bottom: 50px;
+ width: 100%;
+  overflow-x: scroll;
+}
+
+th {
+  font-weight: bold;
+  padding: 10px;
+  
+}
+
+
+
+td {
+  border: 1px solid;
+  padding: 7px;
+}
+h2{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+@media (max-width: 600px) {
+  table {
+    display: block;
+  }
+  .main-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn{
+    max-width: auto;
+    margin-top: 25px;
+  }
+}
+
+
